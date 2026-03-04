@@ -15,7 +15,7 @@ html {
 
 body {
   font-family:
-    Robot,
+    Roboto,
     system-ui,
     -apple-system,
     sans-serif;
@@ -27,13 +27,13 @@ body {
   padding: 0 20px;
 }
 
-.header {
+.header,
+.hero,
+.footer {
   background-color: #1f2937;
   color: #f9faf8;
-}
-
-.header {
-  padding: 16px 0;
+  font-size: 18px;
+  padding: 20px 0;
 }
 
 .header-content {
@@ -56,5 +56,131 @@ ul {
 a {
   text-decoration: none;
   color: #e5e7eb;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero,
+.info,
+.cta {
+  padding: 60px 0px;
+}
+
+.hero-information,
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img,
+.info-item img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-information h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero-information p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #3882f6;
+  color: #f9faf8;
   font-size: 18px;
+  font-weight: 900;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 32px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #0061fd;
+  cursor: pointer;
+}
+
+.info h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.info-container {
+  display: flex;
+  gap: 40px;
+  padding: 0px 100px;
+}
+
+.info-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+}
+
+.info-item p {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+}
+
+.quote {
+  background-color: #e5e7eb;
+}
+
+.quote-content {
+  padding: 60px 120px;
+}
+
+.quote-text {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote-author {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 900;
+  display: block;
+  text-align: right;
+}
+
+.cta-content {
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  border-radius: 8px;
+}
+
+.cta-text h2,
+.cta-text p {
+  color: #f9faf8;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #3882f6;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
 }
